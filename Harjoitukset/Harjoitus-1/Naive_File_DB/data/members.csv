@@ -1,0 +1,23 @@
+id,name,email,joined_date,status
+1,Katherine Allen,katherine.allen1167@example.com,2022-04-24,ACTIVE
+2,Satoshi Torvalds,satoshi.torvalds6966@example.com,2021-08-24,ACTIVE
+3,Barbara Hamilton,barbara.hamilton2331@example.com,2021-05-27,SUSPENDED
+4,Katherine Lamarr,katherine.lamarr9326@example.com,2022-08-15,ACTIVE
+5,Frances Johnson,frances.johnson6595@example.com,2022-07-12,ACTIVE
+6,John Allen,john.allen1318@example.com,2021-03-23,ACTIVE
+7,Dennis Lamarr,dennis.lamarr4103@example.com,2021-02-22,SUSPENDED
+8,Satoshi Nakamoto,satoshi.nakamoto340@example.com,2022-07-06,ACTIVE
+9,Edsger Backus,edsger.backus8503@example.com,2023-06-25,ACTIVE
+10,Edsger Nakamoto,edsger.nakamoto7142@example.com,2023-10-05,ACTIVE
+11,John Thompson,john.thompson6691@example.com,2022-11-14,ACTIVE
+12,Donald Dijkstra,donald.dijkstra5404@example.com,2023-04-24,ACTIVE
+13,Katherine van Rossum,katherine.van.rossum9013@example.com,2021-03-17,ACTIVE
+14,Dennis Hamilton,dennis.hamilton5297@example.com,2021-08-26,ACTIVE
+15,Guido Shannon,guido.shannon19@example.com,2023-08-05,ACTIVE
+16,Linus Shannon,linus.shannon5928@example.com,2023-10-18,ACTIVE
+17,Alan Torvalds,alan.torvalds4376@example.com,2021-09-26,ACTIVE
+18,Frances Backus,frances.backus1990@example.com,2021-03-01,ACTIVE
+19,Hedy Berners-Lee,hedy.berners-lee2595@example.com,2022-09-29,ACTIVE
+20,Mary Gosling,mary.gosling1528@example.com,2022-04-06,ACTIVE
+21,Ada Lovelace,ada@example.com,2026-01-12,ACTIVE
+22, Clerk A,a@example.com,2026-01-12,ACTIVE
