@@ -177,8 +177,7 @@ python scripts/generate_data.py --books 50000 --members 20000 --loans 40000 --ou
 ### Luo “huonoa dataa” (rikkinäiset viitteet, epäjohdonmukaiset tilat, skeemadrifti)
 
 ```bash
-python scripts/generate_data.py --books 5000 --members 2000 --loans 4000 --out ./data \
-  --bad-refs 50 --double-checkout 50 --inconsistent 50 --schema-drift
+python scripts/generate_data.py --books 5000 --members 2000 --loans 4000 --out ./data --bad-refs 50 --double-checkout 50 --inconsistent 50 --schema-drift
 ```
 
 **Mitä se muuttaa käytännössä:**
