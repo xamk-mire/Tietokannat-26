@@ -268,6 +268,3 @@ Merkitse ✔ tai ✘ ja selitä lyhyesti.
 
    * [ ] Kyllä [ ] Ei
    * Miksi?
-
-* tehdä tästä **täytettävän pohjan (esim. Markdown/Word)**, tai
-* lisätä **mallivastaukset** kuhunkin kohtaan.
