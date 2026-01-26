@@ -226,7 +226,7 @@ Käytä tätä tilaa (tai erillistä paperia):
 * Voit katsoa mallia kuvien liittämisestä markdown tiedostoon täältä: [Adding images in markdown](https://www.markdownguide.org/basic-syntax/#images-1)
 
 ```
-[ Lisää ER-kaaviosi tähän ]
+![ER Kaavio](C:\Users\kuuts\OneDrive\Desktop\Tietokannat\Näyttökuva 2026-01-26 191943.png)
 ```
 
 
@@ -254,25 +254,25 @@ Merkitse ✔ tai ✘ ja selitä lyhyesti.
 
 1. Voiko jäsen lainata useita kirjoja ajan myötä?
 
-   * [] Kyllä [ ] Ei
-   * Miksi?
+   * [X] Kyllä [ ] Ei
+   * Miksi? Jäsen–Lainaus -suhde on 1:N, joten yhdellä jäsenellä voi olla useita lainauksia eri aikoina.
 
 2. Voiko samaa kirjakappaletta lainata useita kertoja eri kuukausina?
 
-   * [ ] Kyllä [ ] Ei
-   * Miksi?
+   * [X] Kyllä [ ] Ei
+   * Miksi? Kyllä kirjan ja kopion suhde on 1:N
 
 3. Voiko kirjalla olla useita kirjoittajia?
 
-   * [ ] Kyllä [ ] Ei
-   * Miksi?
+   * [X] Kyllä [] Ei
+   * Miksi? Kirja–Kirjailija -suhde on M:N, jolloin kirjalla voi olla useampi kirjoittaja ja kirjoittaja voi kirjoittaa useita kirjoja.
 
 4. Voiko kirja olla olemassa ilman kustantajaa?
 
-   * [ ] Kyllä [ ] Ei
-   * Miksi?
+   * [X] Kyllä [] Ei
+   * Miksi? Kyllä, koska Kirjan ja julkaisijan suhde on valinnainen
 
 5. Voiko lainauksella olla tyhjä return_date?
 
-   * [ ] Kyllä [ ] Ei
-   * Miksi?
+   * [X] Kyllä [ ] Ei
+   * Miksi? Koska Palautuspäivä on valinnainen atribuutti
