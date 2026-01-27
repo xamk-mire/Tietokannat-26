@@ -1,6 +1,8 @@
 
 # 1) Mikä on relaatiotietokanta? (Relational Database)
 
+[IBM: What is a relational dabase?](https://www.ibm.com/think/topics/relational-databases#228874317)
+
 Relaatiotietokanta (Relational Database) on tapa järjestää tietoa niin, että se tuntuu vähemmän kaoottiselta muistiinpanokasalta ja enemmän hyvin järjestetyltä kirjastolta.  
 Sen sijaan, että tieto tallennettaisiin ”kaikki kaikkialle”, relaatiotietokanta tallentaa tiedon **tauluihin** (tables), jotka voidaan **liittää** (linked) toisiinsa huolellisesti määriteltyjen sääntöjen avulla.
 
