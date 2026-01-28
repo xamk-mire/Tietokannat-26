@@ -169,7 +169,47 @@ TrailShop haluaa lisätä kaupan luetteloon **15 tuotetta**.
 - Varastosaldon on oltava kokonaisluku väliltä **0–200**
     
 - Hinnat tulee tallentaa tarkasti (älä käytä liukulukutyyppejä / floating point types)
+
+---
+
+## Kategoriamäppäysvaatimus (Category Mapping) (Tärkeä)
+
+Tuotteidesi täytyy viitata oikeaan kategoriaan käyttämällä `category_id`:tä.
+
+✅ Voit olettaa, että kategoriat lisätään samassa järjestyksessä kuin yllä:
+
+1. Tents
     
+2. Backpacks
+    
+3. Sleeping Gear
+    
+4. Hiking Accessories
+    
+5. Outdoor Clothing
+    
+
+Jolloin `category_id`-arvot ovat todennäköisesti:
+
+- Tents → `1`
+    
+- Backpacks → `2`
+    
+- Sleeping Gear → `3`
+    
+- Hiking Accessories → `4`
+    
+- Outdoor Clothing → `5`
+    
+
+📌 Tietokantasi voi kuitenkin antaa eri ID:t riippuen siitä, miten lisäsit datan.  
+Siksi sinun täytyy **varmistaa ID:t** ajamalla:
+
+```sql
+SELECT * FROM categories;
+```
+
+Ja käyttää sitten oikeita ID-arvoja tuotteen INSERT-lauseissa.   
 
 ---
 
@@ -223,46 +263,7 @@ TrailShop haluaa lisätä kaupan luetteloon **15 tuotetta**.
 |RainShell Waterproof Jacket|119.00|22|
 |Thermal Hiking Socks (2-Pack)|14.99|120|
 
----
 
-## Kategoriamäppäysvaatimus (Category Mapping Requirement) (Tärkeä)
-
-Tuotteidesi täytyy viitata oikeaan kategoriaan käyttämällä `category_id`:tä.
-
-✅ Voit olettaa, että kategoriat lisätään samassa järjestyksessä kuin yllä:
-
-1. Tents
-    
-2. Backpacks
-    
-3. Sleeping Gear
-    
-4. Hiking Accessories
-    
-5. Outdoor Clothing
-    
-
-Jolloin `category_id`-arvot ovat todennäköisesti:
-
-- Tents → `1`
-    
-- Backpacks → `2`
-    
-- Sleeping Gear → `3`
-    
-- Hiking Accessories → `4`
-    
-- Outdoor Clothing → `5`
-    
-
-📌 Tietokantasi voi kuitenkin antaa eri ID:t riippuen siitä, miten lisäsit datan.  
-Siksi sinun täytyy **varmistaa ID:t** ajamalla:
-
-```sql
-SELECT * FROM categories;
-```
-
-Ja käyttää sitten oikeita ID-arvoja tuotteen INSERT-lauseissa.
 
 ---
 
@@ -308,7 +309,7 @@ Tämän tiedoston täytyy sisältää vaaditut kyselyt.
 
 ---
 
-# Palautusvaatimukset (Submission Requirements)
+# Palautusvaatimukset
 
 Palauta nämä kolme tiedostoa tehtävän repositorion sisällä:
 
