@@ -1,5 +1,7 @@
 # **Harjoitus 2: ER-MALLINNUS**
-
+Jasse Kuutsuo
+Vladislav Jeskin
+Lauri Tauren
 # **Suunnittele ja mallinna: Kirjaston lainausjärjestelmä**
 
 > **Ohjeet:**
@@ -226,7 +228,7 @@ Käytä tätä tilaa (tai erillistä paperia):
 * Voit katsoa mallia kuvien liittämisestä markdown tiedostoon täältä: [Adding images in markdown](https://www.markdownguide.org/basic-syntax/#images-1)
 
 ```
-
+![alt text](Näyttökuva 2026-01-26 191943.png)
 ```
 
 
