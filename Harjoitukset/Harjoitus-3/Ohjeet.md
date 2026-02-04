@@ -9,7 +9,7 @@
 
 ## **OSA A — Tietokannan rakentaminen**
 
-Perustuu tiedostoon [Materials/05-SQL-perusteet.md](../../Materials/05-SQL-perusteet.md). Luot tietokannan, kirjoitat kaikki `CREATE TABLE` -lauseet, lisäät esimerkkidatan ja suoritat perus-`SELECT`-kyselyitä tarkistusta varten.
+Perustuu tiedostoon [Materiaalit/05-SQL-perusteet.md](../../Materiaalit/05-SQL-perusteet.md). Luot tietokannan, kirjoitat kaikki `CREATE TABLE` -lauseet, lisäät esimerkkidatan ja suoritat perus-`SELECT`-kyselyitä tarkistusta varten.
 
 ---
 
@@ -178,7 +178,7 @@ Suorita kaksi kyselyä varmistaaksesi, että data on paikallaan:
 
 ## **OSA B — Kyselyharjoitukset**
 
-Perustuu tiedostoon [Materials/06-SQL-perusteet-2.md](../../Materials/06-SQL-perusteet-2.md). Käytä kirjaston skeemaa (Books, Authors, BookAuthors, Members, Loans, Fines). Kirjoita jokaiselle tehtävälle SQL vastaavaan koodilohkoon. Tarkista tulos **Odotus / Itsetarkistus** -vihjeen avulla.
+Perustuu tiedostoon [Materiaalit/06-SQL-perusteet-2.md](../../Materiaalit/06-SQL-perusteet-2.md). Käytä kirjaston skeemaa (Books, Authors, BookAuthors, Members, Loans, Fines). Kirjoita jokaiselle tehtävälle SQL vastaavaan koodilohkoon. Tarkista tulos **Odotus / Itsetarkistus** -vihjeen avulla.
 
 ---
 
