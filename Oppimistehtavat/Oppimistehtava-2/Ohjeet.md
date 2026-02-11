@@ -26,7 +26,7 @@ luokkarepo-nimi
 ## Esitiedot
 
 - Suoritettu Tehtävä 1 (trailshop-tietokanta tauluineen `categories` ja `products`)
-- Tutustuminen [Materiaaliin 07 — SQL-perusteet osa III](./Materiaalit/07-SQL-perusteet-3.md): liitokset (JOIN), viite-eheys ja rajoitteet
+- Tutustuminen [Materiaaliin 07 — SQL-perusteet osa III](../../Materiaalit/07-SQL-perusteet-3.md): liitokset (JOIN), viite-eheys ja rajoitteet
 
 ---
 
