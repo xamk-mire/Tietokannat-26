@@ -338,7 +338,6 @@ Useimpiin sovellustarpeisiin oletus (READ COMMITTED) riittää. Käytä korkeamp
 | **Transaktiot** | BEGIN … COMMIT (tai ROLLBACK) ryhmittelee lauseet yhdeksi työn yksiköksi. Kaikki tai ei mitään.                                                                      |
 | **ACID**        | Atomisuus (kaikki tai ei mitään), Johdonmukaisuus (rajoitteet pätevät), Eristys (samanaikaiset transaktiot), Kestävyys (commitattu data säilyy kaatumisten jälkeen). |
 | **Rollbackit**  | ROLLBACK hylkää kaikki nykyisen transaktion muutokset. Virheet keskeyttävät tyypillisesti transaktion; sitten ROLLBACK ja uudelleenyritys.                           |
-| **Eristys**     | Taso määrittää, mitä yksi transaktio näkee muista. READ COMMITTED (oletus), REPEATABLE READ, SERIALIZABLE. Tiukempi = vähemmän anomalioita, enemmän lukituksia.      |
 
 ---
 
