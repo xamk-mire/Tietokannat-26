@@ -303,33 +303,13 @@ _Vastauksesi:_
 
 ---
 
-### C5 — Eristystaso (johdanto)
-
-**C5.1** Aseta eristystasoksi **REPEATABLE READ** nykyiselle transaktiolle, aja `SELECT * FROM athletes;`, sitten COMMIT. Kirjoita lauseet.
-
-```sql
-BEGIN;
-SET TRANSACTION ISOLATION LEVEL REPEATABLE READ;
-
-
-COMMIT;
-```
-
----
-
-**C5.2** Milloin voisit valita **REPEATABLE READ**:n oletuksen (READ COMMITTED) sijaan? Yksi lyhyt syy.
-
-_Vastauksesi:_
-
----
-
 ## Itsetarkistus (validointi)
 
 Ennen lopetusta varmista:
 
 1. **Osa A:** Tunnistit päivitys-, lisäys- ja poistoanomaliat; osittaiset riippuvuudet (2NF); transitiivisen riippuvuuden (3NF).
 2. **Osa B:** Kirjoitit ja ajat omat CREATE TABLE -lauseesi transaktion sisällä; kirjoitit ja ajat oman migraatiosi (INSERT...SELECT) transaktion sisällä ja tarkistit rivimäärät ennen COMMIT:iä; poistit `medal_results` -taulun transaktion sisällä. Lopputila: 8 riviä **results** -taulussa, 6 **athletes** -taulussa.
-3. **Osa C:** C1.1 ja C1.2 tehty; C2.1 poisti yhden tuloksen; C3 ajoi kaksi INSERTiä yhdessä transaktiossa; C4:n rollback jätti urheilijan 1 sähköpostin ennalleen; C5 (valinnainen) asetti eristystason REPEATABLE READ ja ajoi SELECTin.
+3. **Osa C:** C1.1 ja C1.2 tehty; C2.1 poisti yhden tuloksen; C3 ajoi kaksi INSERTiä yhdessä transaktiossa; C4:n rollback jätti urheilijan 1 sähköpostin ennalleen.
 
 ---
 
