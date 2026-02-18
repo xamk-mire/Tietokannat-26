@@ -11,7 +11,6 @@ Tässä luvussa keskitytään **datan muuttamiseen ja poistamiseen** sekä **muu
 - **Transaktiot** — lauseiden ryhmittäminen niin, että ne joko onnistuvat tai epäonnistuvat yhdessä
 - **ACID-ominaisuudet** — mitä tietokanta takaaa
 - **Rollbackit** — transaktion sisällä tehdyn työn peruuttaminen
-- **Eristystasot** — miten samanaikaiset transaktiot näkevät toistensa muutokset (johdanto)
 
 Tämä luku käyttää samaa **yliopistotietokantaa** kuin [Materiaalit 05](Materiaalit/05-SQL-perusteet.md)–[07](Materiaalit/07-SQL-perusteet-3.md): `students`, `courses`, `enrollments`, `grades`, `teachers`.
 
@@ -317,54 +316,6 @@ COMMIT;
 ```
 
 Tämä on hyödyllistä "osittaiseen peruutukseen" yhden transaktion sisällä. Johdantokurssilla tallennuspisteet voi jättää pois ja käyttää vain `BEGIN` / `COMMIT` / `ROLLBACK`.
-
----
-
-# 5) Eristystasot (johdanto)
-
-Kun useita transaktioita ajetaan samanaikaisesti, **eristys** määrittää, mitä yksi transaktio näkee toisten muutoksista. **Eristystaso** on asetus, joka määrittää, kuinka tiukka tämä erottelu on.
-
----
-
-## Miksi se merkitsee
-
-- **Tiukempi eristys** — vähemmän samanaikaisuusongelmia (esim. sama rivi luetaan kahdesti ja näkee eri arvot), mutta enemmän lukituksia tai estymistä, joten suorituskyky voi laskea.
-- **Väljempi eristys** — enemmän samanaikaista suoritusta ja usein parempi suorituskyky, mutta saatat nähdä "likaisia lukuja", "ei-toistettavia lukuja" tai "haamurivejä" (tasosta riippuen).
-
-Eristystason valinta on kompromissi oikeellisuuden ja suorituskyvyn välillä.
-
----
-
-## Tasot PostgreSQLissa (yleiskuva)
-
-PostgreSQL tukee neljää eristystasoa (vähiten tiukasta tiukimpaan):
-
-| Taso                 | Tyypillinen käyttö / idea                                                                                                                                                                                                                                                                                 |
-| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **READ UNCOMMITTED** | Tarkoitettu "nähdä myös committaamattomat muutokset". PostgreSQLissa toteutettu kuten READ COMMITTED, joten käytännössä saat READ COMMITTED -käyttäytymisen.                                                                                                                                              |
-| **READ COMMITTED**   | **Oletus.** Näet vain rivit, jotka on commitattu ennen kyselysi alkamista. Et näe toisen transaktion committaamattomia muutoksia. Jos sama kysely ajetaan kahdesti transaktiossasi, saatat nähdä eri dataa, jos toinen transaktio on commitannut väliin (ei-toistettava luku).                            |
-| **REPEATABLE READ**  | Näet johdonmukaisen tilannevedoksen: toistetut lukemiset samassa transaktiossa näkevät saman commitoidun tilan. Muiden transaktioiden myöhemmät commitit eivät näy ennen kuin commitoit tai perut. Haamurivit (uudet kyselyä vastaavat rivit) voivat silti ilmestyä joissakin tapauksissa PostgreSQLissa. |
-| **SERIALIZABLE**     | Vahvin takuu: tulos on ikään kuin transaktiot olisi ajettu peräkkäin. Tietokanta estää monia samanaikaisuusongelmia mutta voi keskeyttää transaktioita, jotka rikkovat sarjallistettavuuden (sitten yrität uudelleen).                                                                                    |
-
----
-
-## Eristystason asettaminen
-
-Voit asettaa tason **nykyiselle transaktiolle**:
-
-```sql
-BEGIN;
-SET TRANSACTION ISOLATION LEVEL READ COMMITTED;  -- oletus
--- tai
-SET TRANSACTION ISOLATION LEVEL REPEATABLE READ;
--- tai
-SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
-
--- lauseesi
-COMMIT;
-```
-
-Voit asettaa oletuksen myös istunnolle (katso PostgreSQLin dokumentaatio). PostgreSQLin oletus on **READ COMMITTED**.
 
 ---
 
