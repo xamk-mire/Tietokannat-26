@@ -32,8 +32,8 @@ your-Classroom-repo-name
 ## Edellytykset
 
 - Suoritettu Tehtävä 2 (TrailShop-tietokanta asiakkailla ja tilauksilla)
-- Tuntemus [Materiaalista 10 — Indeksit ja indeksointi](../../Materials/10-Indexes-and-Indexing-FI.md)
-- Tuntemus [Materiaalista 11 — Käyttäjät ja roolit](../../Materials/11-Users-and-Roles-FI.md)
+- Tuntemus [Materiaalista 10 — Indeksit ja indeksointi](../../Materiaalit/10-Indeksit-ja-Indeksointi.md)
+- Tuntemus [Materiaalista 11 — Käyttäjät ja roolit](../../Materiaalit/11-Kayttajat-ja-Roolit.md)
 
 ---
 
@@ -163,7 +163,7 @@ Luo `03_seed.sql` kaikilla INSERT-lauseilla myymälöille, työntekijöille ja v
 
 # Osa 3 — Indeksointi
 
-Luo indeksit hakujen suorituskyvyn parantamiseksi. Katso ohje [Materiaalista 10](../../Materials/10-Indexes-and-Indexing-FI.md).
+Luo indeksit hakujen suorituskyvyn parantamiseksi. Katso ohje [Materiaalista 10](../../Materiaalit/10-Indeksit-ja-Indeksointi.md).
 
 ### Vaaditut indeksit
 
@@ -184,7 +184,7 @@ Luo `03_indexes.sql` kaikilla `CREATE INDEX` -lauseilla.
 
 # Osa 4 — Käyttäjät ja roolit
 
-Määritä roolit ja oikeudet TrailShop-henkilöstölle. Katso syntaksi [Materiaalista 11](../../Materials/11-Users-and-Roles-FI.md).
+Määritä roolit ja oikeudet TrailShop-henkilöstölle. Katso syntaksi [Materiaalista 11](../../Materiaalit/11-Kayttajat-ja-Roolit.md).
 
 ### Vaaditut roolit
 
