@@ -2,7 +2,7 @@
 
 ### Miten sovellukset käsittelevät todentamisen, valtuuttamisen ja tietokantapääsyn
 
-Tämä materiaali jatkaa aihetta [Tietokannat ohjelmoinnissa](12-Tietokannat-ohjelmoinnissa.md) ja [Käyttäjät ja roolit](11-Kayttajat-ja-Roolit.md).
+Tämä materiaali jatkaa aihetta [Tietokannat ohjelmoinnissa](./12-Tietokannat-ohjelmoinnissa.md) ja [Käyttäjät ja roolit](./11-Kayttajat-ja-Roolit.md).
 
 ---
 
@@ -47,7 +47,7 @@ Useimmat sovellukset käyttävät **yhtä tietokantakäyttäjää** kaikille ope
 
 - Yhteysmerkkijono sisältää tunnukset tälle käyttäjälle (esim. `app_user` / `password`).
 - Jokainen kysely — olipa kyseessä Alice, Bob tai nimettömän kävijän data — suoritetaan sillä käyttäjällä.
-- Tietokanta myöntää tälle käyttäjälle tarvitsemansa oikeudet (esim. SELECT, INSERT, UPDATE, DELETE sovelluksen tauluilla). Katso [Materiaali 11](11-Users-and-Roles-FI.md) roolien ja oikeuksien määrittelyyn.
+- Tietokanta myöntää tälle käyttäjälle tarvitsemansa oikeudet (esim. SELECT, INSERT, UPDATE, DELETE sovelluksen tauluilla). Katso [Materiaali 11](./11-Kayttajat-ja-Roolit.md) roolien ja oikeuksien määrittelyyn.
 
 ### Miksi ei yhtä tietokantakäyttäjää per sovelluskäyttäjä?
 
@@ -305,7 +305,7 @@ Tämä antaa täyden hallinnan mutta vaatii enemmän koodia ja huolellisuutta.
 
 - Sovelluksen tietokantakäyttäjän pitää olla **vain** tarvitsemansa oikeudet.
 - Suosittele vain luku -yhteyksiä raportointiin tai luku painoisiin palveluihin.
-- Vältä `SUPERUSER`- tai skeeman muutosoikeuksia tavalliselle sovelluskäyttäjälle. Katso [Materiaali 11](11-Users-and-Roles-FI.md) roolisuunnittelusta.
+- Vältä `SUPERUSER`- tai skeeman muutosoikeuksia tavalliselle sovelluskäyttäjälle. Katso [Materiaali 11](./Kayttajat-ja-Roolit.md) roolisuunnittelusta.
 
 ### Sovelluskäyttäjät: puolustus syvyydessä
 
@@ -342,6 +342,6 @@ Tämä antaa täyden hallinnan mutta vaatii enemmän koodia ja huolellisuutta.
 
 ## Liittyvät materiaalit
 
-- [11 – Käyttäjät ja roolit](11-Users-and-Roles-FI.md) — Tietokantatason roolit, oikeudet, GRANT/REVOKE PostgreSQLissä
-- [12 – Tietokannat ohjelmoinnissa](12-Databases-in-Programming-FI.md) — Tietokantojen tarkoitus ohjelmoinnissa, yhteyden mallit
-- [13 – Entity Framework Core](13-Entity-Framework-Core-FI.md) — ORM .NETille, mukaan lukien Identity-integraatio
+- [11 – Käyttäjät ja roolit](./11-Kayttajat-ja-Roolit.md) — Tietokantatason roolit, oikeudet, GRANT/REVOKE PostgreSQLissä
+- [12 – Tietokannat ohjelmoinnissa](./12-Tietokannat-ohjelmoinnissa.md) — Tietokantojen tarkoitus ohjelmoinnissa, yhteyden mallit
+- [13 – Entity Framework Core](./13-Entity-Framework-Core.md) — ORM .NETille, mukaan lukien Identity-integraatio
