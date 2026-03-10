@@ -2,7 +2,7 @@
 
 ### Käytännön johdatus .NETin ORM:ään tietokantakäyttöön
 
-Tämä materiaali jatkaa aihetta [Tietokannat ohjelmoinnissa](12-Tietokannat-ohjelmoinnissa.md).
+Tämä materiaali jatkaa aihetta [Tietokannat ohjelmoinnissa](./12-Tietokannat-ohjelmoinnissa.md).
 
 ---
 
@@ -517,10 +517,10 @@ EF Core 10 ( .NET 10:n kanssa) lisää ominaisuuksia kuten parannellun LINQ-SQL-
 
 ## Liittyvät materiaalit
 
-- [12 – Tietokannat ohjelmoinnissa](12-Databases-in-Programming-FI.md) — Tietokantojen tarkoitus ohjelmoinnissa, ORM:t, CRUD, transaktiot
-- [05 – SQL-perusteet](05-SQL-fundamentals.md) — SQL-perusteet (taulut, avaimet, kyselyt)
-- [09 – Transaktiot ja datan muokkaus](09-Transactions-and-Data-Modification-FI.md) — Transaktiot SQL:ssä
-- [14 – Käyttäjien ja roolien hallinta ohjelmoinnissa](14-Managing-Users-and-Roles-in-Programming.md) — Sovelluksen käyttäjät, roolit ja Identity-integraatio
+- [12 – Tietokannat ohjelmoinnissa](./12-Tietokannat-ohjelmoinnissa.md) — Tietokantojen tarkoitus ohjelmoinnissa, ORM:t, CRUD, transaktiot
+- [05 – SQL-perusteet](./05-SQL-perusteet.md) — SQL-perusteet (taulut, avaimet, kyselyt)
+- [09 – Transaktiot ja datan muokkaus](./09-transaktiot-ja-datan-muokkaus.md) — Transaktiot SQL:ssä
+- [14 – Käyttäjien ja roolien hallinta ohjelmoinnissa](./14-Kayttajien-ja-roolien-hallinta-ohjelmoinnissa.md) — Sovelluksen käyttäjät, roolit ja Identity-integraatio
 
 ## Lisäluettavaa
 
