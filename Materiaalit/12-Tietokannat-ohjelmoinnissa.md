@@ -292,8 +292,8 @@ Tietokantojen roolin ymmärtäminen ohjelmoinnissa—niiden tarkoitus ja käytt�
 
 ## Liittyvät materiaalit
 
-- [00 – Johdanto](./Materiaalit/00-Johdanto.md) — Mikä on tietokanta ja miksi niitä kehitettiin?
-- [04 – PostgreSQL](./Materiaalit/04-PostgreSQL.md) — Johdanto PostgreSQLiin
-- [05 – SQL-perusteet](./Materiaalit/05-SQL-perusteet.md) — Taulujen rakentaminen ja kyselyt SQL:llä
-- [13 – Entity Framework Core](./Materiaalit/13-Entity-Framework-Core.md) — Käytännön ORM .NET-sovelluksille
-- [14 – Käyttäjien ja roolien hallinta ohjelmoinnissa](./Materiaalit/14-Managing-Users-and-Roles-in-Programming.md) — Sovellustason käyttäjät, roolit ja tietokantakäyttö
+- [00 – Johdanto](./00-Johdanto.md) — Mikä on tietokanta ja miksi niitä kehitettiin?
+- [04 – PostgreSQL](./04-PostgreSQL.md) — Johdanto PostgreSQLiin
+- [05 – SQL-perusteet](./05-SQL-perusteet.md) — Taulujen rakentaminen ja kyselyt SQL:llä
+- [13 – Entity Framework Core](./13-Entity-Framework-Core.md) — Käytännön ORM .NET-sovelluksille
+- [14 – Käyttäjien ja roolien hallinta ohjelmoinnissa](./14-Kayttajien-ja-roolien-hallinta-ohjelmoinnissa.md) — Sovellustason käyttäjät, roolit ja tietokantakäyttö
