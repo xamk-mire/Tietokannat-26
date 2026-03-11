@@ -8,7 +8,7 @@
 > **Edellytykset:**
 >
 > - .NET 10 SDK
-> - PostgreSQL ja luotu/täytetty `university_db` (ks. [university_db_schema.sql](./Materiaalit/Esimerkki-db/university_db_schema.sql) ja [university_db_seed.sql](./Materiaalit/Esimerkki-db/university_db_seed.sql))
+> - PostgreSQL ja luotu/täytetty `university_db` (ks. [university_db_schema.sql](../../Materiaalit/Esimerkki-db/university_db_schema.sql) ja [university_db_seed.sql](../../Materiaalit/Esimerkki-db/university_db_seed.sql))
 > - Materiaali 12 (Databases in Programming), 13 (Entity Framework Core)
 
 ---
