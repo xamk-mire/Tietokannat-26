@@ -277,6 +277,17 @@ Luo projektin juureen tiedosto `appsettings.json`:
 }
 ```
 
+Tarvittaessa lisää alla oleva koodi **.csproj** sisälle -> Visual Studio tarvitsee, VS Coden pitäisi toimia ilmankin.
+Voit lisätä vain <None> elementin kohdat olemassa olevan ItemGroup:n sisälle.
+
+```
+<ItemGroup>
+  <None Update="appsettings.json">
+    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </None>
+</ItemGroup>
+```
+
 Korvaa `KÄYTTÄJÄS` ja `SALASANA` PostgreSQL-tunnuksillasi.
 
 Varmista, että `appsettings.json` kopioidaan output-kansioon. Lisää tiedostoon `UniversityConsole.csproj` elementin `<Project>` sisälle:
