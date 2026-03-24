@@ -2,7 +2,7 @@
 
 ### Mitä ne ovat ja miten niitä tyypillisesti käsitellään
 
-[Materiaalissa 03](./03-Relaatiotietokannat.md) esittelimme relaatiomallin (relational model) ja yleiset datatyypit (data types) (kokonaisluvut, teksti, päivämäärät).  
+[Materiaalissa 03](./03-Relaatiotietokanta.md) esittelimme relaatiomallin (relational model) ja yleiset datatyypit (data types) (kokonaisluvut, teksti, päivämäärät).  
 [Materiaaleissa 05](./05-SQL-perusteet.md)–[07](./07-SQL-perusteet-3.md) työskentelimme rakennetun datan (structured data) kanssa tauluissa (tables).
 
 Tässä luvussa esitellään **media-tiedostot (media files)** tietokantayhteydessä:
@@ -461,6 +461,6 @@ Vaihtoehtoisesti käytä yhtä `media_files`-taulua tyyppikohtaisille kentille n
 
 ## Liittyvät materiaalit (related materials)
 
-- [Materiaali 03](./03-Relaatiotietokannat.md) — Relaatiomalli (relational model) ja datatyypit (data types)
+- [Materiaali 03](./03-Relaatiotietokanta.md) — Relaatiomalli (relational model) ja datatyypit (data types)
 - [Materiaali 08](./08-normalisointi-ja-skeeman-laatu.md) — Skeeman suunnittelu (schema design) ja redundanssin välttäminen
 - [Materiaali 12](./12-Tietokannat-ohjelmoinnissa.md) — Miten sovellukset vuorovaikuttavat tietokantojen kanssa
