@@ -318,7 +318,7 @@ Nämä asetukset ovat sessiokohtaisia ja nollautuvat kun yhdistät uudelleen.
 
 ## EXPLAIN käytännössä
 
-`EXPLAIN` näyttää **hausehdotelman** — vaiheet, joita PostgreSQL käyttää haun suorittamiseen. Se **ei suorita** hakua.
+`EXPLAIN` näyttää **haukuehdotelman (query plan)**** — vaiheet, joita PostgreSQL käyttää haun suorittamiseen. Se **ei suorita** hakua.
 
 ### Peruskäyttö
 
