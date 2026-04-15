@@ -252,7 +252,7 @@ Tietokanta varmistaa, että jokaisen commitoidun transaktion jälkeen kaikki raj
 
 ### Eristys
 
-Kaksi samanaikaisesti ajettavaa transaktiota näkevät datasta näkymän, joka riippuu **eristystasosta**. Korkeammalla tasolla transaktiosi on enemmän "suojassa" muiden transaktioiden committaamattomilta tai myöhemmiltä muutoksilta; matalammalla tasolla saatat nähdä uudempia tai väliarvoja. Katso [Kohta 5](#5-eristystasot-johdanto) alla.
+Kaksi samanaikaisesti ajettavaa transaktiota näkevät datasta näkymän, joka riippuu **eristystasosta**. Korkeammalla tasolla transaktiosi on enemmän "suojassa" muiden transaktioiden committaamattomilta tai myöhemmiltä muutoksilta; matalammalla tasolla saatat nähdä uudempia tai väliarvoja.
 
 ### Kestävyys
 
